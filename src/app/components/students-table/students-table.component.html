@@ -1,0 +1,26 @@
+<div class="students-table-container">
+  <table class="students-table">
+    <thead class="students-table-header">
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Major</th>
+      <th>Check In Date</th>
+      <th>Check In Count</th>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let student of (studentsObservable | async)"
+        class="students-table-entry">
+        <td>{{ student.firstName }}</td>
+        <td>{{ student.lastName }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.major }}</td>
+        <td>{{ student.checkInTime | date }}</td>
+        <td>{{ student.checkInCount }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button (click)="handleNewUserClick()" class="new-user">New User</button>
+</div>

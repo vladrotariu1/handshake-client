@@ -1,0 +1,44 @@
+.students-table-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.students-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+  -webkit-box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+}
+
+.students-table th, td {
+  font-weight: normal;
+  padding: 0 32px;
+  text-align: left;
+}
+
+.students-table-header {
+  background-color: #6c7ae0;
+  color: #f8f8f8;
+  height: 48px;
+}
+
+.students-table-entry {
+  background-color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  color: #5b5b5b;
+  height: 48px;
+}
+
+.new-user {
+  background-color: #eaeaea;
+  border: none;
+  color: #6c7ae0;
+  cursor: pointer;
+  height: 48px;
+}
+
+.new-user:hover {
+  background-color: #6c7ae0;
+  color: #f8f8f8;
+}

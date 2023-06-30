@@ -1,0 +1,56 @@
+.check-in-student-form-container {
+  background-color: #6c7ae0;
+}
+
+.check-in-student-form-title {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  padding: 24px;
+}
+
+.check-in-student-form {
+  background-color: #edf2ff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.check-in-student-form-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px ;
+}
+
+.check-in-student-form-input-container label {
+  color: #243080ad;
+}
+
+.check-in-student-form-input-container input {
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #6c7ae0;
+  color: #243080;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.check-in-student-form-input-container input:focus {
+  outline: none;
+}
+
+.check-in-student-error {
+  color: red;
+}
+
+.check-in-student-button {
+  border: none;
+  background-color: #6c7ae0;
+  color: white;
+  font-size: 16px;
+  padding: 8px 8px;
+}
+
+.check-in-student-button:hover {
+  cursor: pointer;
+}

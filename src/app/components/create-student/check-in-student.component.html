@@ -1,0 +1,25 @@
+<div class="check-in-student-form-container">
+  <h2 class="check-in-student-form-title">Create Student</h2>
+  <form class="check-in-student-form" [formGroup]="createStudentForm">
+    <div class="check-in-student-form-input-container">
+      <label>First Name</label>
+      <input type="text" formControlName="firstName">
+    </div>
+    <div class="check-in-student-form-input-container">
+      <label>Last Name</label>
+      <input type="text" formControlName="lastName">
+    </div>
+    <div class="check-in-student-form-input-container">
+      <label>E-Mail</label>
+      <input type="text" formControlName="email">
+    </div>
+    <div *ngIf="(majors$ | async) as majorsObj" class="check-in-student-form-input-container">
+      <label>Choose major</label>
+      <select formControlName="major">
+        <option *ngFor="let major of majorsObj.majors" [value]="major.name">{{ major.name }}</option>
+      </select>
+    </div>
+    <div *ngIf="showError" class="check-in-student-error"> Account not created </div>
+    <button class="check-in-student-button" (click)="handleCheckInStudent()">Create</button>
+  </form>
+</div>
